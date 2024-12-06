@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Coins, PieChart, TrendingUp } from 'lucide-react'
+import { Coins, PieChart, TrendingUp, ArrowUp } from 'lucide-react'
 import Link from "next/link"
 // import Link from "next/link"
 
@@ -13,8 +13,8 @@ export default function Page() {
       <header className="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Coins className="h-6 w-6 text-blue-600" />
-            <span className="font-bold text-gray-900">InvestBond</span>
+            <ArrowUp className="h-6 w-6 text-blue-600" />
+            <span className="font-bold text-gray-900">Upto14</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
@@ -49,8 +49,8 @@ export default function Page() {
             returns?
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Invest with us today and earn a 10% return with minimal risk through our
-            tokenized treasuries and corporate bonds.
+            Invest with us today and earn upto 14% return with through our selected
+            regulated government and corporate bonds.
           </p>
           <div className="flex items-center justify-center gap-4 pt-4">
             <Link href="/signup">
@@ -74,9 +74,9 @@ export default function Page() {
           >
             <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-blue-300/20 blur-2xl" />
             <PieChart className="h-12 w-12 mb-4 text-blue-600" />
-            <h3 className="text-5xl font-bold mb-2">2.5%</h3>
-            <p className="text-lg font-medium mb-1">Compound Finance</p>
-            <p className="text-sm text-gray-600">2.5% APY</p>
+            <h3 className="text-5xl font-bold mb-2">7.5%</h3>
+            <p className="text-lg font-medium mb-1">Government Bonds</p>
+            <p className="text-sm text-gray-600">7.5% APY</p>
           </motion.div>
 
           <motion.div
@@ -89,7 +89,7 @@ export default function Page() {
             <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-green-300/20 blur-2xl" />
             <Coins className="h-12 w-12 mb-4 text-green-600" />
             <h3 className="text-5xl font-bold mb-2">10%</h3>
-            <p className="text-lg font-medium mb-1">US Treasuries</p>
+            <p className="text-lg font-medium mb-1">Bank FDs</p>
             <p className="text-sm text-gray-600">10% APY</p>
           </motion.div>
 
@@ -102,9 +102,9 @@ export default function Page() {
           >
             <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-purple-300/20 blur-2xl" />
             <TrendingUp className="h-12 w-12 mb-4 text-purple-600" />
-            <h3 className="text-5xl font-bold mb-2">15%</h3>
-            <p className="text-lg font-medium mb-1">Corporate Bond</p>
-            <p className="text-sm text-gray-600">15% APY</p>
+            <h3 className="text-5xl font-bold mb-2">14%</h3>
+            <p className="text-lg font-medium mb-1">Corporate Bonds</p>
+            <p className="text-sm text-gray-600">14% APY</p>
           </motion.div>
         </div>
       </main>
